@@ -11,7 +11,43 @@
             bool jogadorAcertou = false;
 
             // escolher uma palavra aleatória
-            string palavraEscolhida = "MELANCIA";
+            string[] palavras = {
+                "ABACATE",
+                "ABACAXI",
+                "ACEROLA",
+                "ACAI",
+                "ARACA",
+                "BACABA",
+                "BACURI",
+                "BANANA",
+                "CAJA",
+                "CAJU",
+                "CARAMBOLA",
+                "CUPUACU",
+                "GRAVIOLA",
+                "GOIABA",
+                "JABUTICABA",
+                "JENIPAPO",
+                "MACA",
+                "MANGABA",
+                "MANGA",
+                "MARACUJA",
+                "MURICI",
+                "PEQUI",
+                "PITANGA",
+                "PITAYA",
+                "SAPOTI",
+                "TANGERINA",
+                "UMBU",
+                "UVA",
+                "UVAIA"
+            };
+
+            Random rand = new Random();
+
+            int numeroAleatorio = rand.Next(palavras.Length);
+
+            string palavraEscolhida = palavras[numeroAleatorio];
 
             char[] letrasEncontradas = new char[palavraEscolhida.Length];
 
